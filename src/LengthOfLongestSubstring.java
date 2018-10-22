@@ -12,7 +12,7 @@ public class LengthOfLongestSubstring {
         Set<Character> longestSubstringCharactersSet = new HashSet<>();
         int lengthOfLongestSubstring = 1;
         int leftIndex = 0;
-        while (leftIndex < s.length() - lengthOfLongestSubstring) {
+        while (leftIndex < s.length()) {
             if (!longestSubstringCharactersSet.add(s.charAt(leftIndex))) {
                 lengthOfLongestSubstring = Math.max(lengthOfLongestSubstring, longestSubstringCharactersSet.size());
                 longestSubstringCharactersSet.clear();
@@ -20,6 +20,7 @@ public class LengthOfLongestSubstring {
             }
             leftIndex++;
         }
+        lengthOfLongestSubstring = Math.max(lengthOfLongestSubstring, longestSubstringCharactersSet.size());
         return lengthOfLongestSubstring;
     }
 }

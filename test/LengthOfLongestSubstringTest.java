@@ -20,6 +20,13 @@ class LengthOfLongestSubstringTest {
     }
 
     @Test
+    void previouslySeenCharacters() {
+        String testString = "pwwkew";
+        int substringLength = length.lengthOfLongestSubstring(testString);
+        assertEquals(3, substringLength, "Expected 3, but was " + substringLength);
+    }
+
+    @Test
     void testPalindrome() {
         String testString = "bananab";
         int substringLength = length.lengthOfLongestSubstring(testString);
