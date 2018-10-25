@@ -1,0 +1,17 @@
+Collection of algorithms based on challenges from popular coding sites. Some method names will map directly to the challenges.
+
+My method is to try to solve the challenges in 45 minutes. The break down is:
+
+Minutes 0-2: Subtract, since this will be talking to the interviewer
+
+Minutes 2-5: Try to understand the problem, inputs, outputs
+
+Minutes 5-10: Come up with a brute force solution. Try to come up with an alternate solution that will reduce time complexity.
+
+Minutes 10 - around 35: Code the solution.
+
+Minutes 35 to around 45 (leave time for final questions): Run sample input, find and correct bugs/syntax errors.
+                                                          Try to think of a better solution
+                                                          
+Sometimes I take a few hours if I'm practicing something new (such as the WinningCandidate solution, where I was
+experimenting with hashcode and compareTo in order to go from O(n^2) to O(n) in time complexity.
